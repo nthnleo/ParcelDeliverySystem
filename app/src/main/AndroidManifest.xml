@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nthnleo.parceldeliverysystem" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permisssion.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permisssion.INTERNET"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Parcel Delivery System"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.nthnleo.parceldeliverysystem.MainActivity"
+            android:label="Parcel Delivery System" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nthnleo.parceldeliverysystem.MainMenu"
+            android:label="@string/title_activity_main_menu" >
+        </activity>
+        <activity
+            android:name="com.nthnleo.parceldeliverysystem.ManageFriends"
+            android:label="@string/title_activity_manage_friends" >
+        </activity>
+        <activity
+            android:name="com.nthnleo.parceldeliverysystem.SendParcel"
+            android:label="@string/title_activity_send_parcel" >
+        </activity>
+    </application>
+
+</manifest>
